@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SmartShopper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <i class="fas fa-shopping-basket"></i>
+                <span>SmartShopper</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about.html" class="nav-link active">About</a>
+                <a href="/how-it-works.html" class="nav-link">How It Works</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-page">
+        <div class="container">
+            <h1>About SmartShopper</h1>
+            <div class="about-content">
+                <section class="mission">
+                    <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                    <p>We aim to help shoppers make informed decisions by providing real-time price comparisons across major e-commerce platforms. Our goal is to save you both time and money while ensuring you get the best deals available.</p>
+                </section>
+
+                <section class="features">
+                    <h2><i class="fas fa-star"></i> What We Offer</h2>
+                    <ul>
+                        <li>Real-time price comparison</li>
+                        <li>Multiple platform support</li>
+                        <li>Accurate and up-to-date information</li>
+                        <li>User-friendly interface</li>
+                        <li>Fast and efficient search</li>
+                    </ul>
+                </section>
+
+                <section class="why-choose">
+                    <h2><i class="fas fa-check-circle"></i> Why Choose Us</h2>
+                    <p>Our platform stands out by providing:</p>
+                    <div class="benefits">
+                        <div class="benefit-card">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Speed</h3>
+                            <p>Get instant price comparisons across platforms</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Reliability</h3>
+                            <p>Trust in our accurate and current data</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h3>Savings</h3>
+                            <p>Find the best deals effortlessly</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 SmartShopper. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html> 

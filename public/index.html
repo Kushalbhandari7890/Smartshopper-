@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartShopper - Compare Prices Across Platforms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <i class="fas fa-shopping-basket"></i>
+                <span>SmartShopper</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link active">Home</a>
+                <!-- <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">How It Works</a>
+                <a href="#" class="nav-link">Contact</a> -->
+                <a href="/about.html" class="nav-link">About</a>
+                <a href="/how-it-works.html" class="nav-link">How It Works</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find the Best Deals Across Multiple Platforms</h1>
+            <p>Compare prices from Amazon and Flipkart</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for products...">
+                <div class="suggestions-container" id="suggestionsContainer"></div>
+                <button id="searchButton">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+        </section>
+        
+        <section class="results" id="resultsSection">
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Searching across platforms...</p>
+            </div>
+            <div class="results-grid" id="resultsGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 SmartShopper. All rights reserved.</p>
+            <div class="footer-links">
+                <!-- <a href="#">Privacy Policy</a>
+                <a href="#">Contact Us</a> -->
+                <!-- <a href="/privacy-policy.html">Privacy Policy</a> -->
+                <a href="/contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 

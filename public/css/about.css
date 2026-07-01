@@ -1,0 +1,235 @@
+/* About Page Styles */
+.about-page {
+    padding: 4rem 2rem;
+    animation: fadeIn 0.8s ease-out;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-page h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    animation: slideUp 0.8s ease-out;
+    position: relative;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-page h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+}
+
+/* Mission Section */
+.mission {
+    background: var(--bg-primary);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 3rem;
+    animation: slideUp 0.8s ease-out 0.2s both;
+    border: 1px solid rgba(184, 134, 11, 0.1);
+}
+
+.mission h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.mission h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.mission p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Features Section */
+.features {
+    background: var(--bg-primary);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 3rem;
+    animation: slideUp 0.8s ease-out 0.4s both;
+    border: 1px solid rgba(184, 134, 11, 0.1);
+}
+
+.features h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.features h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 1.2rem;
+    padding-left: 1.8rem;
+    position: relative;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.features li::before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.4rem;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+    background: var(--bg-primary);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    animation: slideUp 0.8s ease-out 0.6s both;
+    border: 1px solid rgba(184, 134, 11, 0.1);
+}
+
+.why-choose h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.why-choose h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    flex-wrap: nowrap;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--bg-secondary);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(184, 134, 11, 0.1);
+    box-shadow: var(--shadow-sm);
+    flex: 1;
+    min-width: 0;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary-light);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 2rem 1rem;
+    }
+
+    .about-page h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .mission,
+    .features,
+    .why-choose {
+        padding: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .benefits {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    
+    .benefit-card {
+        width: 100%;
+    }
+
+    .mission h2,
+    .features h2,
+    .why-choose h2 {
+        font-size: 1.6rem;
+    }
+} 

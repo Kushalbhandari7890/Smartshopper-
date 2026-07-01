@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@sparticuz/chromium": "^141.0.0",
+    "axios": "^1.10.0",
+    "body-parser": "^2.2.0",
+    "cheerio": "^1.1.0",
+    "express": "^5.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "nodemailer": "^7.0.9",
+    "nodemon": "^3.1.10",
+    "pdfkit": "^0.17.1",
+    "puppeteer": "^24.32.1",
+    "puppeteer-core": "^24.29.1",
+    "request": "^2.88.2",
+    "request-promise": "^0.0.1"
+  },
+  "name": "SmartShopper",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
