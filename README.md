@@ -35,3 +35,7 @@ Comparing prices across Indian e-commerce platforms usually means opening 4-5 ta
 
 ## 📌 Status
 Actively maintained. Built as a personal portfolio project to demonstrate full-stack development, web scraping, and backend API design.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4241a657159aeb8aae4a335b27bed1f4cb14ec8d
